@@ -3,6 +3,7 @@
 open System
 open Microsoft.FSharp.Math
 open AshleyIngram.Euler.Common.StringExtensions
+open AshleyIngram.Euler.Common.ListExtensions
 
 /// <summary>
 /// Generic Euler Helpers
@@ -20,7 +21,7 @@ module Helpers =
         let nums = [1UL .. uint64(Math.Ceiling(Math.Sqrt(float(max))))]
 
         // Filter out any numbers which are divisible by i (and therefore not primes)
-        let sieve(numList: uint64 list, i: uint64) = if i <> 0UL && i <> 1UL && ListExtensions.Contains(numList, i) 
+        let sieve(numList: uint64 list, i: uint64) = if i <> 0UL && i <> 1UL && List.Contains(numList, i) 
                                                         then numList |> List.filter(fun x -> x = i || x % i <> 0UL) 
                                                         else numList;
     
@@ -30,21 +31,6 @@ module Helpers =
             if int(i) >= filteredList.Length - 1 then filteredList else applySieve(filteredList, i+1UL);
         
         applySieve(nums, 0UL)
-        
-    /// <summary>
-    /// Determines whether a string is a palindrome
-    /// </summary>
-    /// <param name="str">String to check for palindrome-ness</param>
-    /// <returns>Boolean indicating whether input is a palindrome</returns>    
-    let IsPalindrome (str: string) = 
-        let halfLength = (float(str.Length) / 2.0) |> Math.Floor |> int
-        let firstHalf = str.Substring(0, halfLength)
-
-        // Calculate halfway mark correctly if string is odd length
-        let startIndex = if str.Length % 2 = 0 then halfLength else halfLength + 1
-        let secondHalf = str.Substring(startIndex, halfLength).ToCharArray() |> Array.rev |> String.FromCharArray
-    
-        firstHalf.Equals(secondHalf)
 
     /// <summary>
     /// Generate the Fibonacci Sequence up to a given point

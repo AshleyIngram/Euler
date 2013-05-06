@@ -1,11 +1,11 @@
 ﻿open System
 open Microsoft.FSharp.Math
-open AshleyIngram.Euler.Common.Helpers
+open AshleyIngram.Euler.Common.StringExtensions.String
 
 /// <summary>
 /// Find if the product of 2 numbers is a palindrome
 /// </summary>
-let palinCheck(lhs, rhs) = IsPalindrome((lhs * rhs).ToString())
+let palinCheck(lhs, rhs) = (lhs * rhs).ToString().IsPalindrome
 
 /// <summary>
 /// Find the largest palindrome for any 2 numbers 

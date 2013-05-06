@@ -1,10 +1,10 @@
-﻿namespace AshleyIngram.Euler.Common
+﻿namespace AshleyIngram.Euler.Common.ListExtensions
 
 /// <summary>
 /// Extensions to the built in <see cref="Microsoft.Fsharp.Collections.List" /> type to enhance
 /// functionality
 /// </summary>
-module ListExtensions =
+module List =
     /// <summary>
     /// Checks if a list contains an element
     /// </summary>
