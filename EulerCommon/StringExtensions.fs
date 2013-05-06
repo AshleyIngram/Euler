@@ -1,6 +1,5 @@
 ﻿namespace AshleyIngram.Euler.Common.StringExtensions
 
-open Microsoft.FSharp.Math
 open System
 
 /// <summary>

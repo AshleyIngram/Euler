@@ -1,5 +1,5 @@
 ﻿open System;
-open AshleyIngram.Euler.Common.Helpers
+open AshleyIngram.Euler.Common.MathExtensions
 
 /// <summary>
 /// The prime factors of 13195 are 5, 7, 13 and 29.
@@ -9,7 +9,7 @@ open AshleyIngram.Euler.Common.Helpers
 let main argv = 
     let input = 600851475143UL;
 
-    let allPrimes = PrimeSieve(input);
+    let allPrimes = Math.PrimeGenerator(input);
     let primeFactors = allPrimes |> List.filter(fun n -> input % n = 0UL);
     let ans = primeFactors.Item(primeFactors.Length - 1)
 
