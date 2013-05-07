@@ -39,7 +39,6 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListExtensions.fs" />
     <Compile Include="StringExtensions.fs" />
     <Compile Include="MathExtensions.fs" />
   </ItemGroup>

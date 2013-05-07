@@ -1,7 +1,5 @@
 ﻿namespace AshleyIngram.Euler.Common.MathExtensions
 
-open AshleyIngram.Euler.Common.ListExtensions
-
 module Math =
     /// <summary>
     /// Prime Sieve
@@ -15,7 +13,7 @@ module Math =
         let nums = [1UL .. uint64(System.Math.Ceiling(System.Math.Sqrt(float(max))))]
 
         // Filter out any numbers which are divisible by i (and therefore not primes)
-        let sieve(numList: uint64 list, i: uint64) = if i <> 0UL && i <> 1UL && List.Contains(numList, i) 
+        let sieve(numList: uint64 list, i: uint64) = if i <> 0UL && i <> 1UL && (List.exists(fun e -> e = i) numList) 
                                                         then numList |> List.filter(fun x -> x = i || x % i <> 0UL) 
                                                         else numList;
     
