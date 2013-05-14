@@ -45,8 +45,8 @@
     <Compile Include="Euler4.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EulerCommon\Common.fsproj">
-      <Name>Common</Name>
+    <ProjectReference Include="..\Common\Common.fsproj">
+      <Name>Common (Common\Common)</Name>
       <Project>{d328f206-8ce5-4c2a-8ea8-55dfe1451b83}</Project>
       <Private>True</Private>
     </ProjectReference>
