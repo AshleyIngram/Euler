@@ -38,3 +38,31 @@ module Math =
             list
         else
             GenerateFibonacci(list @ [newNum], stop)
+
+    /// <summary>
+    /// Calculate the Greatest Common Factor between 2 numbers
+    /// </summary>
+    /// <param name="a">The first number</param>
+    /// <param name="b">The second number</param>
+    /// <returns>The Greatest Common Factor of the 2 numbers</returns>
+    let rec GreatestCommonFactor(a, b) =
+        if b = 0I then
+            abs a
+        else
+            GreatestCommonFactor(b, (a % b))
+
+    /// <summary>
+    /// Finds the Lowest Common Multiple of a list of numbers
+    /// </summary>
+    /// <param name="list">A list of numbers to calculate the Lowest Common Multiple of</param>
+    /// <returns>The lowest common multiple of the numbers</returns>
+    let LowestCommonMultiple(list: bigint list) =
+        let lcm(a, b) = 
+            a * b / GreatestCommonFactor(a, b)
+        
+        let rec rangedLcm(number, list) = 
+            match list with
+                | [a] -> lcm(number, a)
+                | _ -> lcm(number, rangedLcm(list.Head, list.Tail))
+
+        rangedLcm(list.Head, list.Tail)
