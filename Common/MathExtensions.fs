@@ -30,14 +30,8 @@ module Math =
     /// <param name="list">Current list of fibonacci numbers</param>
     /// <param name="stop">Point at which to stop calculating fibonacci sequence</param>
     /// <returns>List of fibonacci numbers</returns>
-    let rec GenerateFibonacci (list: List<int>, stop): List<int> =
-        // TODO: Use lazy loading/unfold?
-        let newNum = if (list.Length > 2) then list.Item(list.Length - 2) + list.Item(list.Length - 1) else 1
+    let FibonacciSequence = Seq.unfold(fun (current, next) -> Some(current + next, (next, current + next))) (0, 1)
 
-        if (newNum >= stop) then
-            list
-        else
-            GenerateFibonacci(list @ [newNum], stop)
 
     /// <summary>
     /// Calculate the Greatest Common Factor between 2 numbers

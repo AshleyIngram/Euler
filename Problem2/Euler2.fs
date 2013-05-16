@@ -13,7 +13,7 @@ open AshleyIngram.Euler.Common.MathExtensions
 
 [<EntryPoint>]
 let main argv = 
-    let seq = Math.GenerateFibonacci([], 4000000)
+    let seq = Math.FibonacciSequence |> Seq.takeWhile(fun i -> i < 4000000) |> Seq.toList
 
     let result = seq |> List.filter(fun n -> n % 2 = 0) |> List.sum
     printfn "Result = %A" result
