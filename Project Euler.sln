@@ -21,6 +21,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Common.Tests", "Common.Test
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem6", "Problem6\Problem6.fsproj", "{E8EAD576-C1EB-4985-A802-0D62302250AA}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Solutions", "EulerTests\Solutions.fsproj", "{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,12 +113,23 @@ Global
 		{E8EAD576-C1EB-4985-A802-0D62302250AA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E8EAD576-C1EB-4985-A802-0D62302250AA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E8EAD576-C1EB-4985-A802-0D62302250AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{55B39AE9-07B9-4235-A0C9-EE7F7C78F4DE} = {06D98182-1F64-4D21-ADA4-8128EE63591A}
+		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53} = {06D98182-1F64-4D21-ADA4-8128EE63591A}
 		{D328F206-8CE5-4C2A-8EA8-55DFE1451B83} = {C9DE2E96-F563-435A-80F2-B181986AB236}
 	EndGlobalSection
 EndGlobal
