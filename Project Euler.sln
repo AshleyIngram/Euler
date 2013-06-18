@@ -1,6 +1,10 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{06D98182-1F64-4D21-ADA4-8128EE63591A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C9DE2E96-F563-435A-80F2-B181986AB236}"
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem1", "Problem1\Problem1.fsproj", "{EB9FCC46-7B4B-4B30-9980-64DB1D1C9A56}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem2", "Problem2\Problem2.fsproj", "{A383883F-7DE7-4E80-B6F2-DBAD1C41B747}"
@@ -9,11 +13,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem3", "Problem3\Proble
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem4", "Problem4\Problem4.fsproj", "{3298AEF2-0B8F-46C3-B96F-07CFB0845D89}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{06D98182-1F64-4D21-ADA4-8128EE63591A}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem5", "Problem5\Problem5.fsproj", "{042BD000-C39F-4DCF-8F4C-4745AC896256}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C9DE2E96-F563-435A-80F2-B181986AB236}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Common", "Common\Common.fsproj", "{D328F206-8CE5-4C2A-8EA8-55DFE1451B83}"
 EndProject
