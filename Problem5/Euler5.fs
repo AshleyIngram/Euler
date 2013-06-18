@@ -1,6 +1,4 @@
-﻿#light
-
-open System
+﻿open System
 open AshleyIngram.Euler.Common.MathExtensions
 
 /// <summary>

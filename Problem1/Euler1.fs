@@ -1,5 +1,4 @@
-﻿#light
-open System
+﻿open System
 
 /// <summary>
 /// Solution to Project Euler problem 1
