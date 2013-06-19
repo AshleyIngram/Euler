@@ -25,6 +25,19 @@ module Math =
         applySieve(nums, 0UL)
 
     /// <summary>
+    /// Generate an infinite sequence of Prime Numbers
+    /// </summary>
+    let PrimeSequence = 
+        // Infinite list of odd numbers (because evens can never be prime
+        let sequence = Seq.unfold(fun s -> Some(s, s + 2)) 1
+
+        seq { for i in sequence do
+                let jSeq = Seq.takeWhile(fun x -> x < i) sequence
+                let isPrime = not(Seq.exists(fun x -> i % x = 0 && x > 1) jSeq)
+                if isPrime then yield i
+            }
+
+    /// <summary>
     /// Generate the Fibonacci Sequence up to a given point
     /// </summary>
     /// <param name="list">Current list of fibonacci numbers</param>

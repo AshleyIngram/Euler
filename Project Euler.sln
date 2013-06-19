@@ -23,6 +23,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem6", "Problem6\Proble
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Solutions", "EulerTests\Solutions.fsproj", "{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problem7", "Problem7\Problem7.fsproj", "{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,16 @@ Global
 		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{2361E77A-F7BF-48A3-BDC6-9EF06DF8CD53}.Release|x86.ActiveCfg = Release|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7BDB8E9E-A481-48F1-8F3B-D524F005D61B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
